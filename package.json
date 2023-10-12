@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "npx node-sass -o ./css ./scss/main.scss"
+    "sass": "npx node-sass -watch ./css ./scss/main.scss"
   },
   "keywords": [],
   "author": "",

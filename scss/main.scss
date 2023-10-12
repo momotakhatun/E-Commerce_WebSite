@@ -1,1 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&family=Fira+Sans:wght@600&family=Handlee&family=Merienda&family=Montserrat:ital,wght@0,100;0,400;1,100&family=Poppins:wght@200;300;400;500&family=Quicksand:wght@300;500;600;700&family=Roboto&display=swap");
+
+$font-family-sans-serif: "Poppins", sans-serif;
+// Import Bootstrap from node_modules
 @import "../node_modules/bootstrap/scss/bootstrap";
+// All Custom Code
+body {
+  background-color: #f6f6f6;
+  width: 100vw;
+  min-height: 100vh;
+}
+.li-bar {
+  width: 1px;
+  background-color: #c5c4c4;
+  height: 1rem;
+}
+.nab-icon i {
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0.55);
+}
+.custom-dropdown {
+  position: relative;
+}
+.custom-dropdown:hover ul {
+  display: block;
+}
+.custom-dropdown ul {
+  display: none;
+  min-width: 100px;
+  position: absolute;
+  z-index: 100;
+  background-color: #fff;
+  box-shadow: 0 1px 7px -2px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 0.15rem;
+  margin-top: 0.5rem;
+}
+#main-carousel .carousel-inner {
+  height: 500px;
+  background-color: palegreen;
+}
+.carousel-control-prev {
+  left: -15rem !important;
+}
+#main-carousel .carousel-control-next {
+  right: -15rem !important;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(100%);
+}
+.carousel-control-prev .icon-prev,
+.carousel-control .icon-next {
+  font-size: 100px;
+  margin-top: -50px;
+  color: #fff;
+}
+.carousel-control-prev .carousel-control-prev-icon {
+  color: black;
+}
+.carousel .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 10% !important;
+  background-size: 100% 100%;
+  background-color: red;
+}
